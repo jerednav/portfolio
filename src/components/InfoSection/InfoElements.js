@@ -60,11 +60,11 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
+    margin-bottom: 240px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')}
+    color: #0c0c0c;
 
     @media screen and (max-width: 480px) {
         font-size: 32px;

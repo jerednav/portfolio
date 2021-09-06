@@ -2,18 +2,18 @@ import React from 'react'
 import { Button } from 'react-scroll'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Subtitle, Column2 } from './InfoElements'
 
-export const InfoSection = () => {
+export const InfoSection = ({lightBg, id, topLine, lightText, headLine }) => {
     return (
         <>
-            <InfoContainer >
+            <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow>
                         <Column1>
                         <TextWrapper>
                             <TopLine>
-                                TopLine
+                                {topLine}
                             </TopLine>
-                            <heading>heading</heading>
+                            <heading>{headLine}</heading>
                             <Subtitle>Subtitle</Subtitle>
                         </TextWrapper>
                         </Column1>
