@@ -1,5 +1,7 @@
 import React from 'react'
-import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP } from './ProjectsElements'
+import Icon1 from '../../images/mindful.png'
+import Icon2 from '../../images/boomshark.png'
+import { ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP, ProjectsP2} from './ProjectsElements'
 
 
 const Projects = () => {
@@ -9,20 +11,39 @@ const Projects = () => {
              <ProjectsH1> Projects</ProjectsH1>
              <ProjectsWrapper>
                  <ProjectsCard>
-                     {/* <ProjectsIcon src={Icon1}/> */}
+                     <a target='_blank'
+                     rel='noreferrer'
+                     href='https://mindfulapp.herokuapp.com'>
+                     <ProjectsIcon src={Icon1}/>
+                     </a>
                      <ProjectsH2>mindful</ProjectsH2>
-                     <ProjectsP> minimal to-do app</ProjectsP>
+                     <ProjectsP>Full-stack CRUD web app created for note taking.</ProjectsP>
+                     <ProjectsP2> <button>Live version</button>
+                        
+                     <button>Github Repo</button>
+
+                     </ProjectsP2>
                  </ProjectsCard>
-                 <ProjectsCard>
-                     {/* <ProjectsIcon src={Icon2}/> */}
+                 <ProjectsCard> <a target='_blank'
+                     rel='noreferrer'
+                     href='https://mindfulapp.herokuapp.com'>
+                     <ProjectsIcon src={Icon2}/>
+                     </a>
                      <ProjectsH2>Boomshark</ProjectsH2>
-                     <ProjectsP> IG clone</ProjectsP>
+
+                     <ProjectsP>Full stack IG clone CRUD web app with log-in.           
+                         </ProjectsP>
+                        <ProjectsP2> <button>Live version</button>
+                        
+                     <button>Github Repo</button>
+
+                     </ProjectsP2>
                  </ProjectsCard>
-                 <ProjectsCard>
+                 {/* <ProjectsCard> */}
                      {/* <ProjectsIcon src={Icon3}/> */}
-                     <ProjectsH2>Calculator</ProjectsH2>
-                     <ProjectsP> Projects I've worked on so far.</ProjectsP>
-                 </ProjectsCard>
+                     {/* <ProjectsH2>Calculator</ProjectsH2>
+                     <ProjectsP> Projects I've worked on so far.</ProjectsP> */}
+                 {/* </ProjectsCard> */}
              </ProjectsWrapper>
              </ProjectsContainer>   
         </>

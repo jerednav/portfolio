@@ -5,7 +5,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Sub
 export const InfoSection = ({lightBg, id, topLine, lightText, headLine }) => {
     return (
         <>
-            <InfoContainer lightBg={lightBg} id={id}>
+            <InfoContainer lightBg={lightBg} id="about">
                 <InfoWrapper>
                     <InfoRow>
                         <Column1>
