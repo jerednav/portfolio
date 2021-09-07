@@ -8,7 +8,7 @@ const HeroSection = () => {
             <HeroBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Hi, I'm Jered.</HeroH1>
+                <HeroH1>Hi, I'm <span style={{ color: '#DDBDB7' }}>Jered</span></HeroH1>
                 <HeroP>Welcome to my cozy space. I develop websites and apps. Feel free to check out my work below.</HeroP>
             </HeroContent>
         </HeroContainer>
