@@ -78,9 +78,15 @@ export const NavLinks = styled(LinkS)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    center: pointer;
+    cursor: pointer;
 
-    &.active {
-        border-bottom: 3px solid gray;
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
     }
 `
+
+    // &.active {
+    //     border-bottom: 3px black;
+    // }
