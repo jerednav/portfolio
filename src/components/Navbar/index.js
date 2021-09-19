@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
+import { Nav, NavbarContainer, MobileIcon, NavMenu, NavItem, NavLinks, NavIcon } from './NavbarElements'
+import Icon2 from '../../images/profile.png'
 
 
 
@@ -9,9 +10,9 @@ const Navbar = ({toggle}) => {
         <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>
-                    jerednav
-                </NavLogo>
+              
+                <NavIcon to src={Icon2}/>
+         
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
