@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
-    border-radius: 1000px;
+    border-radius: 15%;
 `
 
 export const HeroBg = styled.div`
