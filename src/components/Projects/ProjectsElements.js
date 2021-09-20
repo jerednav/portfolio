@@ -89,3 +89,4 @@ export const ProjectsP2 = styled.p`
     font-size: 1rem;
     text-align: center;
 `
+
