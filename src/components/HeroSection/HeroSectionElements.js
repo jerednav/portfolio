@@ -7,10 +7,6 @@ export const HeroContainer = styled.div`
     align-items: center;
     padding: 0 30px;
     height: 800px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
     position: relative;
     z-index: 1;
 
