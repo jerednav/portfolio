@@ -46,7 +46,7 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>
               {' '}
-              JeredNav &copy; {new Date().getFullYear()}
+              Jered Nav &copy; {new Date().getFullYear()}
               All rights reserved.
             </WebsiteRights>
             <SocialIcons>
