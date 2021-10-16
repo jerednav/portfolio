@@ -5,9 +5,11 @@ import Icon2 from '../../images/profile.png'
 
 
 
+
 const Navbar = ({toggle}) => {
     return (
         <>
+        
         <Nav>
             <NavbarContainer>
               
@@ -18,19 +20,19 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about">About</NavLinks>
+                        <NavLinks to="/about">About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="projects">Projects</NavLinks>
+                        <NavLinks to="/projects">Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">Contact</NavLinks>
+                        <NavLinks to="/contact">Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
                 
             </NavbarContainer>
         </Nav>
-
+        
         </>
     )
 }
