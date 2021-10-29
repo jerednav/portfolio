@@ -1,74 +1,133 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const HeroContainer = styled.div`
-    background: #B3B1A5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    height: 800px;
-    position: relative;
-    z-index: 1;
+export const InfoContainer = styled.div`
+  color: #000;
+  background: #b3b1a5;
+  height: 800px;
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+  }
+`;
 
-`
+export const InfoWrapper = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 80vh;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
 
-export const HeroBg = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+export const InfoRow = styled.div`
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
+  @media screen and (max-width: 768px) {
+    grid-template-areas: 32px;
+  }
+`;
+
+export const Column1 = styled.div`
+  margin-bottom: -40px;
+  margin-left: 100px;
+  padding: 100 15px;
+  grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+  margin-left: 100px;
+  margin-bottom: 50px;
+  padding: 0 15px;
+  grid-area: col2;
+`;
+
+export const TextWrapper = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+`;
+
+export const TopLine = styled.p`
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+`;
+
+export const Heading = styled.h1`
+  margin-bottom: 10px;
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 600;s
+  color: #000;
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
+export const Subtitle = styled.p`
+  max-width: 440px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 555px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+  @media screen and (max-width: 560px) {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: EEEDE7;
-`
-export const HeroContent = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
-    display: flex;
+  }
+`;
+
+export const SocialMedia = styled.section`
+  max-width: 1000px;
+  width: 100%;
+`;
+
+export const SocialMediaWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  @media screen and (max-width: 820px) {
     flex-direction: column;
-    align-items: center;
-`
-export const HeroContent2 = styled.div`
-    z-index: 3;
-    max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
+  }
+`;
 
-export const HeroH1 = styled.h1`
-    color: #000;
-    font-size: 48px;
-    text-align: center;
-    
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
+export const WebsiteRights = styled.small`
+  color: #000;
+  margin-bottom: 16px;
+`;
 
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 2000px;
+`;
 
-export const HeroP = styled.p`
-    margin-top: 24px;
-    color: #000;
-    font-size: 24px;
-    text-align: center;
-    max-width: 600px;
-
-    @media screen and (max-width: 768px) {
-        font-size: 24px;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
-    }
-`
-
+export const SocialIconLink = styled.a`
+  color: #000;
+  font-size: 48px;
+`;
